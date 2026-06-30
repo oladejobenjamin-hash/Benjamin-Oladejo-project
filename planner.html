@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner - Benjamin Oladejo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Benjamin Oladejo</h1>
+                <p>Course 106 project</p>
+            </div>
+            <nav class="site-nav">
+                <a href="academic management.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="planner.html">Planner</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header container">
+            <h1>Academic Planner</h1>
+            <p>Organize your tasks and stay on top of your coursework and projects.</p>
+        </section>
+
+        <section class="planner-container container">
+            <div class="planner-card">
+                <div class="planner-header">
+                    <h2>My Tasks</h2>
+                    <div class="task-stats">
+                        <span id="task-count">0 tasks</span>
+                        <span id="completed-count">0 completed</span>
+                    </div>
+                </div>
+
+                <div class="task-input-section">
+                    <form id="task-form">
+                        <div class="input-group">
+                            <input 
+                                type="text" 
+                                id="task-input" 
+                                placeholder="Enter a new task (e.g., Complete JavaScript project)"
+                                maxlength="100"
+                                required
+                            >
+                            <select id="priority-select">
+                                <option value="low">Low Priority</option>
+                                <option value="medium" selected>Medium Priority</option>
+                                <option value="high">High Priority</option>
+                            </select>
+                            <button type="submit" class="btn-add-task">Add Task</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Tasks</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+
+                <ul id="task-list" class="task-list">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+
+                <div id="empty-state" class="empty-state">
+                    <p>📋 No tasks yet. Add one to get started!</p>
+                </div>
+
+                <div id="clear-completed" class="clear-section" style="display: none;">
+                    <button id="clear-btn" class="btn-clear">Clear Completed Tasks</button>
+                </div>
+            </div>
+
+            <aside class="planner-sidebar">
+                <div class="sidebar-card tips-card">
+                    <h3>💡 Study Tips</h3>
+                    <ul class="tips-list">
+                        <li>Break large projects into smaller tasks</li>
+                        <li>Set realistic deadlines for each task</li>
+                        <li>Prioritize high-priority tasks first</li>
+                        <li>Review completed tasks regularly</li>
+                        <li>Celebrate small wins!</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-card progress-card">
+                    <h3>📊 Progress</h3>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                    </div>
+                    <p id="progress-text">0% Complete</p>
+                </div>
+
+                <div class="sidebar-card quote-card">
+                    <p class="quote">"Success is the sum of small efforts repeated day in and day out."</p>
+                    <p class="quote-author">— Robert Collier</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer container" id="contact">
+        <p>Stay organized and achieve your academic goals.</p>
+        <p class="small">© 2026 Benjamin Oladejo</p>
+    </footer>
+
+    <script src="js/planner.js" defer></script>
+</body>
+</html>

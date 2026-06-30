@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Benjamin Oladejo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Benjamin Oladejo</h1>
+                <p>Course 106 project</p>
+            </div>
+            <nav class="site-nav">
+                <a href="academic management.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="planner.html">Planner</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header container">
+            <h1>Get In Touch</h1>
+            <p>Have questions or want to collaborate? I'd love to hear from you.</p>
+        </section>
+
+        <section class="contact-container container">
+            <div class="contact-main">
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:benjamin@example.com">benjamin@example.com</a></p>
+                        <p class="info-subtitle">I respond within 24 hours</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                        <p class="info-subtitle">Available on weekdays</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>Your City, Your Country</p>
+                        <p class="info-subtitle">Open to remote opportunities</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            placeholder="Your full name"
+                            maxlength="100"
+                            required
+                        >
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="your.email@example.com"
+                            maxlength="100"
+                            required
+                        >
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="1234567890 (digits only)"
+                            maxlength="15"
+                            required
+                        >
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            placeholder="Tell me about your project or inquiry..."
+                            rows="6"
+                            maxlength="1000"
+                            required
+                        ></textarea>
+                        <span class="char-count" id="char-count">0/1000</span>
+                        <span class="error-message" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Send Message</button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+            </div>
+
+            <aside class="contact-sidebar">
+                <div class="sidebar-card faq-card">
+                    <h3>❓ FAQ</h3>
+                    <div class="faq-item">
+                        <h4>How quickly will I hear back?</h4>
+                        <p>I aim to respond to all inquiries within 24 business hours.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Do you accept freelance projects?</h4>
+                        <p>Yes! I'm open to discussing project opportunities and collaborations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>What's your availability?</h4>
+                        <p>Currently available for part-time projects and full-time opportunities.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-card social-card">
+                    <h3>🔗 Connect</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">Portfolio</a>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer container" id="contact">
+        <p>Looking forward to connecting with you.</p>
+        <p class="small">© 2026 Benjamin Oladejo</p>
+    </footer>
+
+    <script src="js/contact.js" defer></script>
+</body>
+</html>
